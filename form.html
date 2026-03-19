@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Corso WebDesign base" />
+    <meta name="description" content="La prima pagina web del corso di web design base" />
+    <meta name="keywords" content="corso web design, html, pagina web" />
+    <title>Immagini e multimedia</title>
+
+    <style>
+        input::placeholder {
+            font-size: 0.6em;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html" title="Elementi di testo">TESTO</a></li>
+        <li>
+            <a href="immagini.html" title="Immagini e multimedia">MULTIMEDIA</a>
+        </li>
+        <li><a href="tabelle.html" title="Tabelle">TABELLE</a></li>
+        <li><a href="form.html" title="Form">FORMS</a></li>
+    </ul>
+
+    <hr />
+
+    <h1>FORMS</h1>
+
+    <hr />
+
+    <h2>Form semplice</h2>
+
+    <form method="GET" action="thanks.html">
+
+        <label for="userName">Nome e cognome</label>
+        <input type="text" id="userName" name="userName" />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+        <button type="submit" id="send">INVIA</button>
+
+    </form>
+
+    <hr />
+
+    <h2>Form complesso</h2>
+
+    <form method="GET" action="thanks.html">
+
+        <h3>Form di registrazione</h3>
+
+        <fieldset>
+            <legend>ANAGRAFICA</legend>
+            <label for="nameUser">NOME</label>
+            <input type="text" id="nameUser" name="nameUser" placeholder="Inserisci il tuo nome" />
+            <label for="surnameUser">COGNOME*</label>
+            <input type="text" id="surnameUser" name="surnameUser" placeholder="Inserisci il tuo cognome" required />
+            <label for="birthDate">DATA DI NASCITA</label>
+            <input type="date" id="birthDate" name="birthDate" />
+            <br /><br />
+            <label for="userAddress">INDIRIZZO COMPLETO</label>
+            <textarea id="userAddress" name="userAddress" cols="80"></textarea>
+            <br /><br />
+            <label for="userEmail">EMAIL*</label>
+            <input type="email" id="userEmail" name="userEmail"
+                placeholder="Inserisci una email valida: name@example.com" required />
+            <label for="userPass">PASSWORD*</label>
+            <input type="password" id="userPass" name="userPass"
+                placeholder="Inserisci una password tra 8 e 15 caratteri" minlength="8" maxlength="15" required />
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>PREFERENZE</legend>
+            <label for="courseType">TIPO DI CORSO*</label>
+            <select id="courseType" name="courseType" required>
+                <option value="" selected></option>
+                <option value="FT">Full Time</option>
+                <option value="PT">Part Time</option>
+                <option value="serale">Serale</option>
+            </select>
+            <br /><br />
+            <label for="materie">MATERIA DEL CORSO* (scegliere la materia di interesse)</label><br />
+            <input type="radio" id="develop" name="materie" value="development" />
+            <label for="develop">DEVELOPMENT</label><br />
+            <input type="radio" id="design" name="materie" value="webDesign" />
+            <label for="design">WEB DESIGN</label><br />
+            <input type="radio" id="content" name="materie" value="contentMan" />
+            <label for="content">CONTENT MANAGEMENT</label>
+            <br /><br />
+            <label>STRUMENTI CONOSCIUTI</label><br />
+            <input type="checkbox" id="vscode" name="vscode" />
+            <label for="vscode">Visual Studio Code</label><br />
+            <input type="checkbox" id="browsing" name="browsing" />
+            <label for="browsing">Browser</label><br />
+            <input type="checkbox" id="devTools" name="devTools" />
+            <label for="devTools">Developer tools</label><br />
+            <input type="checkbox" id="graphic" name="graphic" />
+            <label for="graphic">Strumenti grafici</label>
+        </fieldset>
+        <br />
+
+        <button type="submit" id="sendForm" name="sendForm">INVIA</button>
+        <button type="reset" id="clearForm" name="clearForm">CANCELLA</button>
+        <br />
+        <h4>*Campi obbligatori</h4>
+
+    </form>
+
+    <hr />
+
+    <h4>
+        <i>
+            Documentazione di riferimento:
+            <a href="https://developer.mozilla.org/en-US/" title="Mozilla Developer Network" target="_blank">
+                <abbr title="Mozilla Developer Network">MDN</abbr>
+            </a>
+        </i>
+    </h4>
+
+    <p>
+        <i>Per maggiori informazioni: <a href="mailto:info@corso.com?subject=Richiesta informazioni"
+                title="Email di contatto" target="_blank">info@corso.com</a></i>
+    </p>
+</body>
+
+</html>
