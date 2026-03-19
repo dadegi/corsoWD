@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Corso WebDesign base" />
+    <meta name="description" content="La prima pagina web del corso di web design base" />
+    <meta name="keywords" content="corso web design, html, pagina web" />
+    <title>La prima pagina web</title>
+
+    <style>
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        caption {
+            border: 2px solid black;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html" title="Elementi di testo">TESTO</a></li>
+        <li>
+            <a href="immagini.html" title="Immagini e multimedia">MULTIMEDIA</a>
+        </li>
+        <li><a href="tabelle.html" title="Tabelle">TABELLE</a></li>
+    </ul>
+
+    <hr />
+
+    <h1>TABELLE</h1>
+
+    <hr />
+
+    <h2>Tabella semplice</h2>
+
+    <table>
+        <caption>Registro presenze</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Anno</th>
+                <th>Presenze</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gianluca</td>
+                <td>2025</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Anna</td>
+                <td>2025</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Nicola</td>
+                <td>2025</td>
+                <td>12</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <td colspan="3">TOTALE PRESENZE: 45</td>
+            </tr>
+        </tfoot>
+        </tbody>
+    </table>
+
+    <hr />
+
+    <h2>Tabella complessa</h2>
+
+    <table>
+        <caption>Struttura corso</caption>
+        <thead>
+            <tr>
+                <th>Materia</th>
+                <th>Argomento</th>
+                <th>Ore</th>
+                <th>Frequenza</th>
+                <th>Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Web Design Base</td>
+                <td>UI & UX</td>
+                <td>15</td>
+                <td>Obbligatoria</td>
+                <td>Elementi di design base</td>
+            </tr>
+            <tr>
+                <td>Web Design Base</td>
+                <td>HTML</td>
+                <td>25</td>
+                <td>Obbligatoria</td>
+                <td>Linguaggio HTML</td>
+            </tr>
+            <tr>
+                <td>Web Design Base</td>
+                <td>CSS</td>
+                <td>35</td>
+                <td>Obbligatoria</td>
+                <td>Linguaggio CSS</td>
+            </tr>
+            <tr>
+                <td>Web Design Base</td>
+                <td>Live coding</td>
+                <td>5</td>
+                <td colspan="2">Facoltativa (no note)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">TOTALE ARGOMENTI</td>
+                <td>4 + 1</td>
+            </tr>
+            <tr>
+                <td colspan="4">TOTALE ORE</td>
+                <td>80</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr />
+
+    <h4>
+        <i>
+            Documentazione di riferimento:
+            <a href="https://developer.mozilla.org/en-US/" title="Mozilla Developer Network" target="_blank">
+                <abbr title="Mozilla Developer Network">MDN</abbr>
+            </a>
+        </i>
+    </h4>
+
+    <p>
+        <i>Per maggiori informazioni: <a href="mailto:info@corso.com?subject=Richiesta informazioni"
+                title="Email di contatto" target="_blank">info@corso.com</a></i>
+    </p>
+</body>
+
+</html>

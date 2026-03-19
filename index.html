@@ -11,11 +11,28 @@
 </head>
 
 <body>
+    <ul>
+        <li><a href="index.html" title="Elementi di testo">TESTO</a></li>
+        <li>
+            <a href="immagini.html" title="Immagini e multimedia">MULTIMEDIA</a>
+        </li>
+        <li><a href="tabelle.html" title="Tabelle">TABELLE</a></li>
+    </ul>
+
+    <hr />
 
     <h1>ELEMENTI DI TESTO</h1>
+    <ul>
+        <li><a href="#headings" title="Headings">HEADINGS</a></li>
+        <li><a href="#liste" title="Liste">LISTE</a></li>
+        <li><a href="#citazioni" title="Citazioni">CITAZIONI</a></li>
+        <li><a href="#altri" title="altri">ALTRI TAG</a></li>
+    </ul>
     <hr />
     <!-- Headings -->
-    <h2>Descrizione dei tag headings come <code>&lt;h1&gt;</code></h2>
+    <h2 id="headings">
+        Descrizione dei tag headings come <code>&lt;h1&gt;</code>
+    </h2>
     <h1>
         Hello, World! (h1, titolo principale, da usare UNA SOLA VOLTA per
         ogni pagina web)
@@ -43,10 +60,12 @@
         ibrida
     </h6>
 
+    <a href="#" title="Inizio">TORNA SU</a>
+
     <hr />
 
     <!-- Liste -->
-    <h2>LISTE</h2>
+    <h2 id="liste">LISTE</h2>
     <ol>
         <li>Elemento ordinato numero 1</li>
         <li>Elemento ordinato numero 2</li>
@@ -90,19 +109,26 @@
         <dd>Descrizione definizione 2</dd>
     </dl>
 
+    <a href="#" title="Inizio">TORNA SU</a>
+
     <hr />
 
     <!-- Citazioni -->
-    <h2>Tipi di citazione</h2>
-    <blockquote cite="https://www.wikipedia.it/">Questa è una citazione</blockquote>
-    <blockquote>Questa è un citazione<br />
+    <h2 id="citazioni">Tipi di citazione</h2>
+    <blockquote cite="https://www.wikipedia.it/">
+        Questa è una citazione
+    </blockquote>
+    <blockquote>
+        Questa è un citazione<br />
         <cite>Fonte: wikipedia</cite>
     </blockquote>
+
+    <a href="#" title="Inizio">TORNA SU</a>
 
     <hr />
 
     <!-- Altri tag semantici -->
-    <h2>ALTRI TAG SEMANTICI</h2>
+    <h2 id="altri">ALTRI TAG SEMANTICI</h2>
     <p>
         <strong>Testo in grassetto importante</strong>
         <b>Testo in grassetto estetico</b>
@@ -110,9 +136,33 @@
         <i>Testo in conrsivo estetico</i>
     </p>
     <p>
-        Per ottimizzzare la resa grafica del layout si utilizza <abbr title="Cascading Style Sheet">CSS</abbr>.
+        Per ottimizzzare la resa grafica del layout si utilizza
+        <abbr title="Cascading Style Sheet">CSS</abbr>.
     </p>
-    <address>TALENTFORM - Progetto GOL Lombardia - corso Web Design prima edizione</address>
+    <address>
+        TALENTFORM - Progetto GOL Lombardia - corso Web Design prima
+        edizione
+    </address>
+
+    <p>&nbsp;</p>
+
+    <a href="#" title="Inizio">TORNA SU</a>
+
+    <hr />
+
+    <h4>
+        <i>
+            Documentazione di riferimento:
+            <a href="https://developer.mozilla.org/en-US/" title="Mozilla Developer Network" target="_blank">
+                <abbr title="Mozilla Developer Network">MDN</abbr>
+            </a>
+        </i>
+    </h4>
+
+    <p>
+        <i>Per maggiori informazioni: <a href="mailto:info@corso.com?subject=Richiesta informazioni"
+                title="Email di contatto" target="_blank">info@corso.com</a></i>
+    </p>
 </body>
 
 </html>

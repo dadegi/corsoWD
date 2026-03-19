@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Corso WebDesign base" />
     <meta name="description" content="La prima pagina web del corso di web design base" />
     <meta name="keywords" content="corso web design, html, pagina web" />
@@ -11,11 +11,26 @@
 </head>
 
 <body>
+    <ul>
+        <li><a href="index.html" title="Elementi di testo">TESTO</a></li>
+        <li>
+            <a href="immagini.html" title="Immagini e multimedia">MULTIMEDIA</a>
+        </li>
+        <li><a href="tabelle.html" title="Tabelle">TABELLE</a></li>
+    </ul>
 
-    <h1>IMMAGINI ED ELEMENTI MULTIMEDIALI</h1>
     <hr />
 
-    <h2>IMMAGINI</h2>
+    <h1>IMMAGINI ED ELEMENTI MULTIMEDIALI</h1>
+    <ul>
+        <li><a href="#immagini" title="Immagini">IMMAGINI</a></li>
+        <li>
+            <a href="#multimedia" title="Elementi multimediali">MULTIMEDIA</a>
+        </li>
+    </ul>
+    <hr />
+
+    <h2 id="immagini">IMMAGINI</h2>
 
     <h4>Immagine locale</h4>
     <img src="assets/img/scarano-logo-250.png" alt="Logo Gruppo Scarano" />
@@ -32,9 +47,11 @@
         <cite>Immagine da Pixabay</cite>
     </figure>
 
+    <a href="#" title="inizio">TORNA SU</a>
+
     <hr />
 
-    <h2>Multimedia</h2>
+    <h2 id="multimedia">Multimedia</h2>
 
     <h4>Audio locale ed esterno</h4>
     <figure>
@@ -62,12 +79,35 @@
     <h4>Video da YouTube</h4>
     <figure>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ZigKawkhgrw?si=Pz8js_egFwrAkefL"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            title="YouTube video player" frameborder="0" allow="
+					accelerometer;
+					autoplay;
+					clipboard-write;
+					encrypted-media;
+					gyroscope;
+					picture-in-picture;
+					web-share;
+				" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <figcaption>Video YouTube su Angular</figcaption>
     </figure>
 
+    <a href="#" title="Inizio">TORNA SU</a>
+
+    <hr />
+
+    <h4>
+        <i>
+            Documentazione di riferimento:
+            <a href="https://developer.mozilla.org/en-US/" title="Mozilla Developer Network" target="_blank">
+                <abbr title="Mozilla Developer Network">MDN</abbr>
+            </a>
+        </i>
+    </h4>
+
+    <p>
+        <i>Per maggiori informazioni: <a href="mailto:info@corso.com?subject=Richiesta informazioni"
+                title="Email di contatto" target="_blank">info@corso.com</a></i>
+    </p>
 </body>
 
 </html>
